@@ -56,16 +56,13 @@
 ;;;  Question 3.  "repeat-game"
 ;; Play n games with a specified strategy
 ;; Possible strategies:
-;;	- (stop-at n): player stops picking up cards when hand is greater 
-;;	  than or equal to n
+;;	-
 ;; Test-cases:
 ;;	-
 ;; The algorithm works thus:
 ;;	-
 (define (repeat-game strategy n)
-   (do (i 0 (+ i 1)))
-      ((<= i n) (black-jack strategy) ("strategy not supported"))
-)
+   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;   Question 4.    clever
