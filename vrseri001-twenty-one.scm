@@ -46,7 +46,8 @@
 ;; Test-cases:
 ;;	- 
 ;; The algorithm works thus:
-;;	-
+;;	- given a value n
+;;	- stop drawing when your hand is greater than or equal to n
 (define (stop-at n)
    (lambda (n)
 	(lambda (customer-hand-so-far dealer-up-card)
@@ -56,13 +57,17 @@
 ;;;  Question 3.  "repeat-game"
 ;; Play n games with a specified strategy
 ;; Possible strategies:
-;;	-
+;;	- (stop-at n): player stops picking up cards when hand is greater 
+;;	  than or equal to n
 ;; Test-cases:
 ;;	-
 ;; The algorithm works thus:
+;;	- given a value n
 ;;	-
 (define (repeat-game strategy n)
-   )
+   (do (i 0 (+ i 1)))
+      ((<= i n) (black-jack strategy) ("strategy not supported"))
+)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;   Question 4.    clever
